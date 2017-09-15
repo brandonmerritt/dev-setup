@@ -1,0 +1,36 @@
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+    handlebars:
+      beautify_on_save: true
+      indent_inner_html: true
+    html:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+      space_after_anon_function: true
+      space_in_paren: true
+    sass: {}
+    scss:
+      beautify_on_save: true
+  core:
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
+    projectHome: "~/projects"
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+  linter:
+    errorPanelHeight: 148
+    showErrorPanel: false
+  "linter-eslint":
+    fixOnSave: true
+    globalNodePath: "/usr/local"
+  "merge-conflicts":
+    gitPath: "/usr/local/bin/git"
+  welcome:
+    showOnStartup: false

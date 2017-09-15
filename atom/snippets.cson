@@ -1,0 +1,72 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+
+# =============================================
+# HTML Snippets
+# =============================================
+
+
+# =============================================
+# Bootstrap Snippets
+# =============================================
+
+# =============================================
+# Handlebars Snippets
+# =============================================
+
+  'each (handlebars)':
+    'prefix': 'ea'
+    'body': '{{#each ${1}}}\n\t{{${0}}}\n{{/each}}'
+  'else (handlebars)':
+    'prefix': 'el'
+    'body': '{{else}}'
+  'if (handlebars)':
+    'prefix': 'if'
+    'body': '{{#if ${1}}}\n\t{{${0}}}\n{{/if}}'
+  'if else (handlebars)':
+    'prefix': 'ifel'
+    'body': '{{#if ${2}}}\n\t{{${1}}}\n{{else}}\n\t${0}\n{{/if}}'
+  'partial (handlebars)':
+    'prefix': 'par'
+    'body': '{{> ${0}}}'
+  'unless (handlebars)':
+    'prefix': 'un'
+    'body': '{{#unless ${1}}}\n\t{{${0}}}\n{{/unless}}'
+  'with (handlebars)':
+    'prefix': 'wi'
+    'body': '{{#with ${1}}}\n\t{{${0}}}\n{{/with}}'
+
+# =============================================
+# JS Snippets
+# =============================================
+'.source.js':
+  'if, else if, else':
+    'prefix': 'ieie'
+    'body': """
+      if (${1:true}) {
+        $2
+      } else if (${3:false}) {
+        $4
+      } else {
+        $5
+      }
+    """

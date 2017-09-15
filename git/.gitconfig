@@ -1,0 +1,20 @@
+[user]
+	name = YOUR.NAME
+	email = YOUR.NAME@email.com
+[core]
+	excludesfile = /Users/YOURHOMEDIRECTORY/.gitignore_global
+	quotepath = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[http]
+	proxy = http://some.proxy:0000
+[https]
+	proxy = http://some.proxy:8000
+[url "https://"]
+	insteadOf = git://
+[credential]
+	helper = osxkeychain
